@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
+    "generate:api": "openapi -i http://localhost:8000/docs-json -o ./generated/api --exportSchemas true",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
@@ -48,6 +49,7 @@
     "vue-jest": "^5.0.0-0",
     "tailwindcss": "^2.1.4",
     "autoprefixer": "^10.2.6",
-    "postcss": "^8.3.2"
+    "postcss": "^8.3.2",
+    "openapi-typescript-codegen": "^0.5.2"
   }
 }
