@@ -1,34 +1,32 @@
-# frontend
+# webrtc.client
 
-## Project setup
-```
-npm install
-```
+### Установка
 
-### Compiles and hot-reloads for development
-```
-npm run serve
+Установка зависимостей
+
+```sh
+yarn install
 ```
 
-### Compiles and minifies for production
-```
-npm run build
+### Разработка
+
+Запуск сервера в режиме разработки:
+
+```sh
+yarn serve
 ```
 
-### Run your unit tests
-```
-npm run test:unit
+Генерация API из локального сервера NodeJs
+
+```sh
+yarn generate:api
 ```
 
-### Run your end-to-end tests
-```
-npm run test:e2e
-```
+### Необходимо сделать (TODO:)
 
-### Lints and fixes files
-```
-npm run lint
-```
+1. Автоматическое добавление токена в header запроса
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+#### [Рекомендации](https://ru.vuejs.org/v2/style-guide/index.html)
+
+- Работать только со сборщиком Yarn
+- Придерживаться стиля именования компонент
