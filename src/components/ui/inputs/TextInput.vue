@@ -34,7 +34,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   name: 'TextInput',
   inheritAttrs: false,
@@ -57,7 +57,7 @@ export default {
     },
     classes: {
       type: Array,
-      default: () => [],
+      default: (): [] => [],
     },
     reset: {
       type: Boolean,
@@ -70,10 +70,10 @@ export default {
   },
   computed: {
     valueModel: {
-      get() {
+      get(): string | number {
         return this.value
       },
-      set(val) {
+      set(val: string | number): void {
         this.$emit('input', val)
       },
     },
